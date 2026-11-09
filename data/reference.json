@@ -1,0 +1,12 @@
+{
+  "seller": "Cửa hàng Huni Demo",
+  "invoice_no": "HD-0006",
+  "invoice_date": "2026-11-09",
+  "lines": [
+    {"description": "Bàn phím", "quantity": 2, "unit_price": 200000, "amount": 400000},
+    {"description": "Chuột không dây", "quantity": 1, "unit_price": 150000, "amount": 150000}
+  ],
+  "subtotal": 550000,
+  "tax": 55000,
+  "total": 605000
+}
