@@ -1,0 +1,22 @@
+{
+  "seller": "Cửa hàng Sao Việt",
+  "invoice_no": "BENCH-017",
+  "invoice_date": "2026-10-17",
+  "lines": [
+    {
+      "description": "Chuột không dây",
+      "quantity": 4,
+      "unit_price": 240000,
+      "amount": 960000
+    },
+    {
+      "description": "Sổ tay",
+      "quantity": 4,
+      "unit_price": 240000,
+      "amount": 960000
+    }
+  ],
+  "subtotal": 1920000,
+  "tax": 192000,
+  "total": 2112000
+}

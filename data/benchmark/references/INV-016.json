@@ -1,0 +1,16 @@
+{
+  "seller": "Huni Office",
+  "invoice_no": "BENCH-016",
+  "invoice_date": "2026-10-16",
+  "lines": [
+    {
+      "description": "Tai nghe",
+      "quantity": 2,
+      "unit_price": 125000,
+      "amount": 250000
+    }
+  ],
+  "subtotal": 250000,
+  "tax": 25000,
+  "total": 275000
+}

@@ -46,9 +46,11 @@ def main():
             rows.append({"variant": name, "error": str(error)})
             continue
         actual = fields(invoice)
-        differences = {field: {"expected": value, "actual": actual.get(field)}
-                       for field, value in expected.items() if actual.get(field) != value}
-        rows.append({"variant": name, "matched": len(expected) - len(differences), "total_fields": len(expected),
+        keys = expected.keys() | actual.keys()
+        differences = {field: {"expected": expected.get(field, "<not in reference>"), "actual": actual.get(field, "<missing>")}
+                       for field in sorted(keys) if field not in expected or field not in actual or actual[field] != expected[field]}
+        rows.append({"variant": name, "matched": len(keys) - len(differences), "total_fields": len(keys),
+                     "prediction": invoice.model_dump(mode="json"),
                      "differences": differences, "arithmetic_issues": issues(invoice)})
     filename = f"live-{args.variant}.json" if args.variant else "live.json"
     target = args.output or Path("reports") / filename

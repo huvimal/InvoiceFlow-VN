@@ -1,0 +1,28 @@
+{
+  "seller": "Cửa hàng Sao Việt",
+  "invoice_no": null,
+  "invoice_date": "2026-10-18",
+  "lines": [
+    {
+      "description": "Bút mực",
+      "quantity": 1,
+      "unit_price": 240000,
+      "amount": 240000
+    },
+    {
+      "description": "Giá đỡ laptop",
+      "quantity": 3,
+      "unit_price": 75000,
+      "amount": 225000
+    },
+    {
+      "description": "Bàn phím cơ",
+      "quantity": 1,
+      "unit_price": 75000,
+      "amount": 75000
+    }
+  ],
+  "subtotal": 540000,
+  "tax": 0,
+  "total": 540000
+}

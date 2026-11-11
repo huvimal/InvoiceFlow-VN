@@ -1,0 +1,22 @@
+{
+  "seller": "Thiết bị Minh Anh",
+  "invoice_no": "BENCH-009",
+  "invoice_date": "2026-10-09",
+  "lines": [
+    {
+      "description": "Chuột không dây",
+      "quantity": 2,
+      "unit_price": 15000,
+      "amount": 30000
+    },
+    {
+      "description": "Cáp sạc",
+      "quantity": 4,
+      "unit_price": 75000,
+      "amount": 300000
+    }
+  ],
+  "subtotal": 330000,
+  "tax": 0,
+  "total": 330000
+}

@@ -1,0 +1,3 @@
+# These references are byte-hashed in the benchmark manifest. Keep checkout bytes stable.
+data/benchmark/references/*.json text eol=lf
+data/benchmark/images/*.png binary

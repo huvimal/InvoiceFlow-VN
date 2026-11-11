@@ -1,0 +1,28 @@
+{
+  "seller": "Thiết bị Minh Anh",
+  "invoice_no": "BENCH-010",
+  "invoice_date": "2026-10-10",
+  "lines": [
+    {
+      "description": "Giá đỡ laptop",
+      "quantity": 2,
+      "unit_price": 75000,
+      "amount": 150000
+    },
+    {
+      "description": "Đèn bàn",
+      "quantity": 3,
+      "unit_price": 35000,
+      "amount": 105000
+    },
+    {
+      "description": "Tai nghe",
+      "quantity": 3,
+      "unit_price": 15000,
+      "amount": 45000
+    }
+  ],
+  "subtotal": 300000,
+  "tax": 30000,
+  "total": 330000
+}

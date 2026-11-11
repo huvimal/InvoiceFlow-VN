@@ -1,0 +1,256 @@
+{
+  "version": "synthetic-layouts-v1",
+  "synthetic": true,
+  "seed": 42,
+  "rights": "Original synthetic invoices created for InvoiceFlow-VN; no customer data.",
+  "reference_policy": "Printed values are ground truth, including deliberately wrong totals and absent fields.",
+  "split_policy": "12 dev / 8 test; layout families are disjoint. Do not tune on test results.",
+  "cases": [
+    {
+      "id": "INV-001",
+      "layout": "classic",
+      "condition": "clean",
+      "split": "dev",
+      "image": "images/INV-001.png",
+      "image_sha256": "1f199f186e858c01011c0d6824a12516919d37cb169403d556b4587fd83797da",
+      "reference": "references/INV-001.json",
+      "reference_sha256": "b25dbe0eaafeefbe5ba616d4af32b80a58638fd030eaa2a610beed76ec08e490",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-002",
+      "layout": "classic",
+      "condition": "tilted",
+      "split": "dev",
+      "image": "images/INV-002.png",
+      "image_sha256": "c1db453738474f3dfefafc26d69fba05e87c196baa8437864f6add96c42072ff",
+      "reference": "references/INV-002.json",
+      "reference_sha256": "05ebf9fb959db22637d2e98acbe47d51928513f071026178a04eb26a662baf6f",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-003",
+      "layout": "classic",
+      "condition": "soft_blur",
+      "split": "dev",
+      "image": "images/INV-003.png",
+      "image_sha256": "ace799539f8080aace31c376397e0a14ffe19517d1ca999d5f38f5a6dbdf063c",
+      "reference": "references/INV-003.json",
+      "reference_sha256": "3fbc574c350abae8c5450618906e8708b18c366815501bcf87ce909e02ffda9d",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-004",
+      "layout": "classic",
+      "condition": "low_contrast",
+      "split": "dev",
+      "image": "images/INV-004.png",
+      "image_sha256": "00e44cc0d6a2752f111eea5018c7dc059c36cd4726186ec9f3b1979c0a3434e6",
+      "reference": "references/INV-004.json",
+      "reference_sha256": "5b2ac60c34618076010725d259d80306b828ed679cfefdedfb0475ca455953c5",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-005",
+      "layout": "receipt",
+      "condition": "clean",
+      "split": "dev",
+      "image": "images/INV-005.png",
+      "image_sha256": "9053bff23d35914cfc4bf87a4b38237bb23d0ad2303026732dd45976d5b60b33",
+      "reference": "references/INV-005.json",
+      "reference_sha256": "f0700e60a78f805ef70e08203c004b3c47d5002b37ac5e09e58ffef14a85a7e1",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-006",
+      "layout": "receipt",
+      "condition": "tilted",
+      "split": "dev",
+      "image": "images/INV-006.png",
+      "image_sha256": "f80aacfe3327bce4edeab0eb07dee948c23708d9f572a49d7900d9bab7ecdf90",
+      "reference": "references/INV-006.json",
+      "reference_sha256": "c5b8eddd852079a6fbe8a6646776a8884a79dd4c1c46bc88d843560789741495",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-007",
+      "layout": "receipt",
+      "condition": "soft_blur",
+      "split": "dev",
+      "image": "images/INV-007.png",
+      "image_sha256": "de4596d81df4f933ea5254cb17c642eb23b52cec16459c7a30da107a3aff66ab",
+      "reference": "references/INV-007.json",
+      "reference_sha256": "a29ab95c73425b53d9a4bb0ed85470d74be8e1f66b3b8dc8f2a3c9bc8ac0237a",
+      "expected_review_issues": [
+        "Thiếu trường invoice_date."
+      ],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-008",
+      "layout": "receipt",
+      "condition": "low_contrast",
+      "split": "dev",
+      "image": "images/INV-008.png",
+      "image_sha256": "abcac551a026bf0bfc30ff4d5fcfeadf16d147db39b3d694fa63cff2b4cd2304",
+      "reference": "references/INV-008.json",
+      "reference_sha256": "5031dacf609752a7f6a1b22df343fac9a255821c53c6c251e4d5883aa666098b",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-009",
+      "layout": "minimal",
+      "condition": "clean",
+      "split": "dev",
+      "image": "images/INV-009.png",
+      "image_sha256": "be042ea70c98ec4aa43ac4d4df547a7b2d478372074a29cad5be21a116ca1ebf",
+      "reference": "references/INV-009.json",
+      "reference_sha256": "fc7a15f6f44f30541e6f811b45349acdb75952ab7814090ebf1751faba9deab9",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-010",
+      "layout": "minimal",
+      "condition": "tilted",
+      "split": "dev",
+      "image": "images/INV-010.png",
+      "image_sha256": "beb591ede366363b65a5abfef94782a7dd86e0e14e34c0610613c1d2dbbef800",
+      "reference": "references/INV-010.json",
+      "reference_sha256": "1e55b686db1f001692e13ff3b0ae093a4e199115d4ae32066a23c0967e14ae14",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-011",
+      "layout": "minimal",
+      "condition": "soft_blur",
+      "split": "dev",
+      "image": "images/INV-011.png",
+      "image_sha256": "6a25f3c520314b983936b39d1ddd987a465c14b22a2b41bbc6c87562a78339ab",
+      "reference": "references/INV-011.json",
+      "reference_sha256": "c5d9a2416480a6a2068bde83193c38e8b03f1a324433d31da642603fb79c384a",
+      "expected_review_issues": [
+        "Tạm tính + thuế khác tổng thanh toán."
+      ],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-012",
+      "layout": "minimal",
+      "condition": "low_contrast",
+      "split": "dev",
+      "image": "images/INV-012.png",
+      "image_sha256": "c255109b2896cabab0bfdb2bae755f0f4a7d395899e9a53fe15d4e7368a2414c",
+      "reference": "references/INV-012.json",
+      "reference_sha256": "fc7aba23f727bdcc958adab37a6afa4f69b939a3a6054beaac0849e4d40dd741",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-013",
+      "layout": "landscape",
+      "condition": "clean",
+      "split": "test",
+      "image": "images/INV-013.png",
+      "image_sha256": "432e6462b93551c135ffbfa2aa5d41e0de3e24e605ff55ec89354f2d2866d781",
+      "reference": "references/INV-013.json",
+      "reference_sha256": "3d0f17e3d36ff2e0ee4063ee39eeb920ad63d8f902791a6a946b9368671ea5d4",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-014",
+      "layout": "landscape",
+      "condition": "tilted",
+      "split": "test",
+      "image": "images/INV-014.png",
+      "image_sha256": "b15fb9a6de5f9a0e39ff90b0704fb4385b9dbb805b978792f7882050b1cab5d7",
+      "reference": "references/INV-014.json",
+      "reference_sha256": "f70b645177eb4b3bf9629c69970f3832998c0d6faf7b5997ecd4bdc36ec16d93",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-015",
+      "layout": "landscape",
+      "condition": "soft_blur",
+      "split": "test",
+      "image": "images/INV-015.png",
+      "image_sha256": "6fc765f29fcd9472b7a972c0f9703d9a7b00c235584fcfc30cdb7c09797bd1fa",
+      "reference": "references/INV-015.json",
+      "reference_sha256": "aa526d431727e028c4b7795e1eb2da1e6fb7581659406dece2e652714c7a89d5",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-016",
+      "layout": "landscape",
+      "condition": "low_contrast",
+      "split": "test",
+      "image": "images/INV-016.png",
+      "image_sha256": "f92abe8bc73b3a62fc870d3f13648b75115df6786a705934c55e3e8fa4240f46",
+      "reference": "references/INV-016.json",
+      "reference_sha256": "cca6df9a11fb6d5270754febece83a044d6bb7d4a9c8e8421393e6c7a61e460f",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-017",
+      "layout": "split",
+      "condition": "clean",
+      "split": "test",
+      "image": "images/INV-017.png",
+      "image_sha256": "fe3b1ca174c2dc53c44aecb28651075d6a5ee84b616b7b55bee5816a9d704503",
+      "reference": "references/INV-017.json",
+      "reference_sha256": "a515cf7d2391012b675777b6b485c316a907c8deb1302d72623fe2af57ea9c8d",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-018",
+      "layout": "split",
+      "condition": "tilted",
+      "split": "test",
+      "image": "images/INV-018.png",
+      "image_sha256": "2c28f42b90191e5901a58209d5e329b787269f9d292a50333a893f3eb08d2981",
+      "reference": "references/INV-018.json",
+      "reference_sha256": "a9e4821d352ac199af19c8ddfb144609b13feab6d9b73dea858772b36591a201",
+      "expected_review_issues": [
+        "Thiếu trường invoice_no."
+      ],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-019",
+      "layout": "split",
+      "condition": "soft_blur",
+      "split": "test",
+      "image": "images/INV-019.png",
+      "image_sha256": "e1067f74e763cbbcc9d99087de34316b484925d45400ff1aa399784920ac2aad",
+      "reference": "references/INV-019.json",
+      "reference_sha256": "134cda8f26dad1e600adc110912b6d2d92b63551d34f24ba28372a68d787ddf1",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    },
+    {
+      "id": "INV-020",
+      "layout": "split",
+      "condition": "low_contrast",
+      "split": "test",
+      "image": "images/INV-020.png",
+      "image_sha256": "0c2764d5e80e34a9f85e19ca114d17bcd459a6cd667c306c6290abd4f1991b18",
+      "reference": "references/INV-020.json",
+      "reference_sha256": "7ccfd9cc0e41711030bfdc367b2539bd5bcda783c3050b3fbf41dc93f4cec75a",
+      "expected_review_issues": [],
+      "reference_origin": "renderer source values; not independent human annotation"
+    }
+  ]
+}

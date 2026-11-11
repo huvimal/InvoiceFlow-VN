@@ -1,0 +1,22 @@
+{
+  "seller": "Huni Office",
+  "invoice_no": "BENCH-013",
+  "invoice_date": "2026-10-13",
+  "lines": [
+    {
+      "description": "Bút mực",
+      "quantity": 2,
+      "unit_price": 240000,
+      "amount": 480000
+    },
+    {
+      "description": "Bàn phím cơ",
+      "quantity": 3,
+      "unit_price": 35000,
+      "amount": 105000
+    }
+  ],
+  "subtotal": 585000,
+  "tax": 58500,
+  "total": 643500
+}

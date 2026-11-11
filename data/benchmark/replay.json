@@ -1,0 +1,527 @@
+{
+  "mode": "scripted_replay_not_model_output",
+  "cases": {
+    "INV-001": {
+      "invoice": {
+        "seller": "Cửa hàng An Bình",
+        "invoice_no": "BENCH-001",
+        "invoice_date": "2026-10-01",
+        "lines": [
+          {
+            "description": "Chuột không dây",
+            "quantity": 3,
+            "unit_price": 35000,
+            "amount": 105000
+          },
+          {
+            "description": "Bàn phím cơ",
+            "quantity": 2,
+            "unit_price": 35000,
+            "amount": 70000
+          }
+        ],
+        "subtotal": 175000,
+        "tax": 17500,
+        "total": 192500
+      }
+    },
+    "INV-002": {
+      "invoice": {
+        "seller": "Cửa hàng An Bình",
+        "invoice_no": "BENCH-002",
+        "invoice_date": "2026-10-02",
+        "lines": [
+          {
+            "description": "Chuột không dây",
+            "quantity": 1,
+            "unit_price": 240000,
+            "amount": 240000
+          },
+          {
+            "description": "Đèn bàn",
+            "quantity": 4,
+            "unit_price": 15000,
+            "amount": 60000
+          },
+          {
+            "description": "Cáp sạc",
+            "quantity": 1,
+            "unit_price": 15000,
+            "amount": 15000
+          }
+        ],
+        "subtotal": 315000,
+        "tax": 31500,
+        "total": 347500
+      }
+    },
+    "INV-003": {
+      "invoice": {
+        "seller": "Cửa hàng An Bình",
+        "invoice_no": "BENCH-003",
+        "invoice_date": "2026-10-03",
+        "lines": [
+          {
+            "description": "Đèn bàn",
+            "quantity": 4,
+            "unit_price": 240000,
+            "amount": 960000
+          },
+          {
+            "description": "Bút mực",
+            "quantity": 4,
+            "unit_price": 35000,
+            "amount": 140000
+          },
+          {
+            "description": "Chuột không dây",
+            "quantity": 2,
+            "unit_price": 240000,
+            "amount": 480000
+          },
+          {
+            "description": "Sổ tay",
+            "quantity": 1,
+            "unit_price": 240000,
+            "amount": 240000
+          }
+        ],
+        "subtotal": 1820000,
+        "tax": 0,
+        "total": 1820000
+      }
+    },
+    "INV-004": {
+      "invoice": {
+        "seller": "Cửa hàng An Bình",
+        "invoice_no": "BENCH-004",
+        "invoice_date": "2026-10-04",
+        "lines": [
+          {
+            "description": "Bút mực",
+            "quantity": 1,
+            "unit_price": 35000,
+            "amount": 35000
+          },
+          {
+            "description": "Bút mực",
+            "quantity": 1,
+            "unit_price": 35000,
+            "amount": 35000
+          }
+        ],
+        "subtotal": 35000,
+        "tax": 3500,
+        "total": 38500
+      }
+    },
+    "INV-005": {
+      "invoice": {
+        "seller": "Văn phòng phẩm Mai",
+        "invoice_no": "BENCH-005",
+        "invoice_date": "2026-10-05",
+        "lines": [
+          {
+            "description": "Cáp sạc",
+            "quantity": 3,
+            "unit_price": 0,
+            "amount": 0
+          },
+          {
+            "description": "Tai nghe",
+            "quantity": 2,
+            "unit_price": 75000,
+            "amount": 150000
+          }
+        ],
+        "subtotal": 150000,
+        "tax": 15000,
+        "total": 165000
+      }
+    },
+    "INV-006": {
+      "invoice": {
+        "seller": null,
+        "invoice_no": "BENCH-006",
+        "invoice_date": "2026-10-06",
+        "lines": [
+          {
+            "description": "Chuột không dây",
+            "quantity": 1,
+            "unit_price": 75000,
+            "amount": 75000
+          },
+          {
+            "description": "Bàn phím cơ",
+            "quantity": 3,
+            "unit_price": 240000,
+            "amount": 720000
+          },
+          {
+            "description": "Sổ tay",
+            "quantity": 3,
+            "unit_price": 15000,
+            "amount": 45000
+          }
+        ],
+        "subtotal": 840000,
+        "tax": 0,
+        "total": 840000
+      }
+    },
+    "INV-007": {
+      "invoice": {
+        "seller": "Văn phòng phẩm Mai",
+        "invoice_no": "BENCH-007",
+        "invoice_date": "2026-10-07",
+        "lines": [
+          {
+            "description": "Giá đỡ laptop",
+            "quantity": 1,
+            "unit_price": 240000,
+            "amount": 240000
+          },
+          {
+            "description": "Bút mực",
+            "quantity": 3,
+            "unit_price": 240000,
+            "amount": 720000
+          },
+          {
+            "description": "Bàn phím cơ",
+            "quantity": 3,
+            "unit_price": 240000,
+            "amount": 720000
+          },
+          {
+            "description": "Sổ tay",
+            "quantity": 2,
+            "unit_price": 15000,
+            "amount": 30000
+          }
+        ],
+        "subtotal": 1710000,
+        "tax": 171000,
+        "total": 1881000
+      }
+    },
+    "INV-008": {
+      "invoice": {
+        "seller": "Văn phòng phẩm Mai",
+        "invoice_no": "BENCH-008",
+        "invoice_date": "2026-10-08",
+        "lines": [
+          {
+            "description": "Bàn phím cơ",
+            "quantity": 2,
+            "unit_price": 75000,
+            "amount": 150000
+          }
+        ],
+        "subtotal": 150000,
+        "tax": 15000,
+        "total": 165000
+      }
+    },
+    "INV-009": {
+      "error": {
+        "kind": "request_error",
+        "status": 429,
+        "message": "Simulated rate limit; no API request made."
+      }
+    },
+    "INV-010": {
+      "invoice": {
+        "seller": "Thiết bị Minh Anh",
+        "invoice_no": "BENCH-010",
+        "invoice_date": "2026-10-10",
+        "lines": [
+          {
+            "description": "Giá đỡ laptop",
+            "quantity": 2,
+            "unit_price": 75000,
+            "amount": 150000
+          },
+          {
+            "description": "Đèn bàn",
+            "quantity": 3,
+            "unit_price": 35000,
+            "amount": 105000
+          },
+          {
+            "description": "Tai nghe",
+            "quantity": 3,
+            "unit_price": 15000,
+            "amount": 45000
+          }
+        ],
+        "subtotal": 300000,
+        "tax": 30000,
+        "total": "not-an-integer"
+      }
+    },
+    "INV-011": {
+      "invoice": {
+        "seller": "Thiết bị Minh Anh",
+        "invoice_no": "BENCH-011",
+        "invoice_date": "2026-10-11",
+        "lines": [
+          {
+            "description": "Tai nghe",
+            "quantity": 2,
+            "unit_price": 125000,
+            "amount": 250000
+          },
+          {
+            "description": "Bút mực",
+            "quantity": 4,
+            "unit_price": 75000,
+            "amount": 300000
+          },
+          {
+            "description": "Đèn bàn",
+            "quantity": 2,
+            "unit_price": 75000,
+            "amount": 150000
+          },
+          {
+            "description": "Chuột không dây",
+            "quantity": 1,
+            "unit_price": 35000,
+            "amount": 35000
+          }
+        ],
+        "subtotal": 735000,
+        "tax": 73500,
+        "total": 813500
+      }
+    },
+    "INV-012": {
+      "invoice": {
+        "seller": "Thiết bị Minh Anh",
+        "invoice_no": "BENCH-012",
+        "invoice_date": "2026-10-12",
+        "lines": [
+          {
+            "description": "Bàn phím cơ",
+            "quantity": 3,
+            "unit_price": 125000,
+            "amount": 375000
+          }
+        ],
+        "subtotal": 375000,
+        "tax": 0,
+        "total": 375000
+      }
+    },
+    "INV-013": {
+      "invoice": {
+        "seller": "Huni Office",
+        "invoice_no": "BENCH-013",
+        "invoice_date": "2026-10-13",
+        "lines": [
+          {
+            "description": "Bút mực",
+            "quantity": 2,
+            "unit_price": 240000,
+            "amount": 480000
+          },
+          {
+            "description": "Bàn phím cơ",
+            "quantity": 3,
+            "unit_price": 35000,
+            "amount": 105000
+          }
+        ],
+        "subtotal": 585000,
+        "tax": 58500,
+        "total": 643500
+      }
+    },
+    "INV-014": {
+      "invoice": {
+        "seller": "Huni Office",
+        "invoice_no": "BENCH-014",
+        "invoice_date": "2026-10-14",
+        "lines": [
+          {
+            "description": "Giá đỡ laptop",
+            "quantity": 4,
+            "unit_price": 35000,
+            "amount": 140000
+          },
+          {
+            "description": "Sổ tay",
+            "quantity": 3,
+            "unit_price": 35000,
+            "amount": 105000
+          },
+          {
+            "description": "Đèn bàn",
+            "quantity": 2,
+            "unit_price": 240000,
+            "amount": 480000
+          }
+        ],
+        "subtotal": 725000,
+        "tax": 72500,
+        "total": 797500
+      }
+    },
+    "INV-015": {
+      "invoice": {
+        "seller": "Huni Office",
+        "invoice_no": "BENCH-015",
+        "invoice_date": "2026-10-15",
+        "lines": [
+          {
+            "description": "Bút mực",
+            "quantity": 4,
+            "unit_price": 75000,
+            "amount": 300000
+          },
+          {
+            "description": "Đèn bàn",
+            "quantity": 2,
+            "unit_price": 35000,
+            "amount": 70000
+          },
+          {
+            "description": "Giá đỡ laptop",
+            "quantity": 4,
+            "unit_price": 15000,
+            "amount": 60000
+          },
+          {
+            "description": "Sổ tay",
+            "quantity": 1,
+            "unit_price": 15000,
+            "amount": 15000
+          }
+        ],
+        "subtotal": 445000,
+        "tax": 0,
+        "total": 445000
+      }
+    },
+    "INV-016": {
+      "invoice": {
+        "seller": "Huni Office",
+        "invoice_no": "BENCH-016",
+        "invoice_date": "2026-10-16",
+        "lines": [],
+        "subtotal": 250000,
+        "tax": 25000,
+        "total": 275000
+      }
+    },
+    "INV-017": {
+      "invoice": {
+        "seller": "Cửa hàng Sao Việt",
+        "invoice_no": "BENCH-017",
+        "invoice_date": "2026-10-17",
+        "lines": [
+          {
+            "description": "Chuột không dây",
+            "quantity": 4,
+            "unit_price": 240000,
+            "amount": 960000
+          },
+          {
+            "description": "Sổ tay",
+            "quantity": 4,
+            "unit_price": 240000,
+            "amount": 960000
+          }
+        ],
+        "subtotal": 1920000,
+        "tax": 192000,
+        "total": 2112000
+      }
+    },
+    "INV-018": {
+      "invoice": {
+        "seller": "Cửa hàng Sao Việt",
+        "invoice_no": "GUESSED-018",
+        "invoice_date": "2026-10-18",
+        "lines": [
+          {
+            "description": "Bút mực",
+            "quantity": 1,
+            "unit_price": 240000,
+            "amount": 240000
+          },
+          {
+            "description": "Giá đỡ laptop",
+            "quantity": 3,
+            "unit_price": 75000,
+            "amount": 225000
+          },
+          {
+            "description": "Bàn phím cơ",
+            "quantity": 1,
+            "unit_price": 75000,
+            "amount": 75000
+          }
+        ],
+        "subtotal": 540000,
+        "tax": 0,
+        "total": 540000
+      }
+    },
+    "INV-019": {
+      "invoice": {
+        "seller": "Cửa hàng Sao Việt",
+        "invoice_no": "BENCH-019",
+        "invoice_date": "2026-10-19",
+        "lines": [
+          {
+            "description": "Cáp sạc",
+            "quantity": 3,
+            "unit_price": 240000,
+            "amount": 720000
+          },
+          {
+            "description": "Chuột không dây",
+            "quantity": 2,
+            "unit_price": 240000,
+            "amount": 480000
+          },
+          {
+            "description": "Sổ tay",
+            "quantity": 1,
+            "unit_price": 75000,
+            "amount": 75000
+          },
+          {
+            "description": "Bàn phím cơ",
+            "quantity": 2,
+            "unit_price": 35000,
+            "amount": 70000
+          }
+        ],
+        "subtotal": 1345000,
+        "tax": 134500,
+        "total": 1479500
+      }
+    },
+    "INV-020": {
+      "invoice": {
+        "seller": "Cửa hàng Sao Việt",
+        "invoice_no": "BENCH-020",
+        "invoice_date": "2026-10-20",
+        "lines": [
+          {
+            "description": "Đèn bàn",
+            "quantity": 3,
+            "unit_price": 240000,
+            "amount": 480000
+          }
+        ],
+        "subtotal": 480000,
+        "tax": 48000,
+        "total": 528000
+      }
+    }
+  }
+}

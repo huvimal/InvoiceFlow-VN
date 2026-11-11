@@ -2,9 +2,10 @@
 import csv
 import io
 from datetime import date
+import re
 from typing import Annotated
 
-from pydantic import BaseModel, ConfigDict, Field, StrictInt
+from pydantic import BaseModel, ConfigDict, Field, StrictInt, field_validator
 
 Money = Annotated[StrictInt, Field(ge=0, le=1_000_000_000_000)]
 Quantity = Annotated[StrictInt, Field(ge=1, le=100_000)]
@@ -30,6 +31,15 @@ class Invoice(Record):
     subtotal: Money | None
     tax: Money | None
     total: Money | None
+
+    @field_validator("invoice_date", mode="before")
+    @classmethod
+    def iso_date_only(cls, value):
+        if value is None or type(value) is date:
+            return value
+        if not isinstance(value, str) or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+            raise ValueError("Use an ISO date YYYY-MM-DD or null; numeric dates are not accepted.")
+        return value
 
 
 def issues(invoice):

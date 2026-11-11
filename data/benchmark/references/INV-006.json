@@ -1,0 +1,28 @@
+{
+  "seller": "Văn phòng phẩm Mai",
+  "invoice_no": "BENCH-006",
+  "invoice_date": "2026-10-06",
+  "lines": [
+    {
+      "description": "Chuột không dây",
+      "quantity": 1,
+      "unit_price": 75000,
+      "amount": 75000
+    },
+    {
+      "description": "Bàn phím cơ",
+      "quantity": 3,
+      "unit_price": 240000,
+      "amount": 720000
+    },
+    {
+      "description": "Sổ tay",
+      "quantity": 3,
+      "unit_price": 15000,
+      "amount": 45000
+    }
+  ],
+  "subtotal": 840000,
+  "tax": 0,
+  "total": 840000
+}

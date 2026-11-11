@@ -10,6 +10,15 @@ from pydantic import ValidationError
 from invoice import Invoice
 
 MODEL = "qwen/qwen3.8-27b"
+EXTRACTION_VERSION = "visible-fields-v2"
+
+
+class ExtractionError(RuntimeError):
+    """Safe public error; does not include the response body, image or API key."""
+    def __init__(self, message, kind="request_error", status=None):
+        super().__init__(message)
+        self.kind = kind
+        self.status = status
 
 
 def read_image(data):
@@ -24,7 +33,9 @@ def read_image(data):
         raise ValueError("Không đọc được ảnh JPG/PNG.") from None
 
 
-def extract(image, key, model=MODEL):
+def extract(image, key, model=MODEL, *, opener=None):
+    if not key.strip() or not model.strip():
+        raise ExtractionError("Cần API key và model ID.", "configuration_error")
     jpg = io.BytesIO()
     preview = image.copy()
     preview.thumbnail((1800, 1800))
@@ -53,13 +64,13 @@ def extract(image, key, model=MODEL):
         "https://api.groq.com/openai/v1/chat/completions",
         data=json.dumps(payload).encode("utf-8"),
         headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json",
-                 "User-Agent": "InvoiceFlow-VN/0.1"},
+                 "User-Agent": "InvoiceFlow-VN/0.2"},
     )
     try:
-        with urlopen(request, timeout=90) as response:
+        with (opener or urlopen)(request, timeout=90) as response:
             choice = json.load(response)["choices"][0]
             if choice.get("finish_reason") == "length":
-                raise RuntimeError("Groq chạm giới hạn đầu ra. Hãy thử hóa đơn ngắn hơn.")
+                raise ExtractionError("Groq chạm giới hạn đầu ra. Hãy thử hóa đơn ngắn hơn.", "response_error")
             return Invoice.model_validate_json(choice["message"]["content"])
     except HTTPError as error:
         status = error.code
@@ -70,8 +81,10 @@ def extract(image, key, model=MODEL):
             404: "Kiểm tra Model ID và quyền truy cập.",
             429: "Kiểm tra hạn mức Groq rồi thử lại.",
         }.get(status, "Kiểm tra model có hỗ trợ ảnh và JSON mode.")
-        raise RuntimeError(f"Groq HTTP {status}. {hint}") from None
+        raise ExtractionError(f"Groq HTTP {status}. {hint}", "request_error", status) from None
     except (URLError, TimeoutError):
-        raise RuntimeError("Kết nối Groq thất bại hoặc hết thời gian chờ.") from None
-    except (ValidationError, ValueError, KeyError, IndexError, TypeError):
-        raise RuntimeError("Đầu ra Groq không khớp schema hóa đơn. Bạn có thể thử lại hoặc nhập tay.") from None
+        raise ExtractionError("Kết nối Groq thất bại hoặc hết thời gian chờ.", "request_error") from None
+    except ValidationError:
+        raise ExtractionError("Đầu ra Groq không khớp schema hóa đơn. Bạn có thể thử lại hoặc nhập tay.", "schema_error") from None
+    except (ValueError, KeyError, IndexError, TypeError):
+        raise ExtractionError("Không đọc được JSON hợp lệ từ Groq. Bạn có thể thử lại hoặc nhập tay.", "response_error") from None

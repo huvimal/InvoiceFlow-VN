@@ -1,0 +1,34 @@
+{
+  "seller": "Văn phòng phẩm Mai",
+  "invoice_no": "BENCH-007",
+  "invoice_date": null,
+  "lines": [
+    {
+      "description": "Giá đỡ laptop",
+      "quantity": 1,
+      "unit_price": 240000,
+      "amount": 240000
+    },
+    {
+      "description": "Bút mực",
+      "quantity": 3,
+      "unit_price": 240000,
+      "amount": 720000
+    },
+    {
+      "description": "Bàn phím cơ",
+      "quantity": 3,
+      "unit_price": 240000,
+      "amount": 720000
+    },
+    {
+      "description": "Sổ tay",
+      "quantity": 2,
+      "unit_price": 15000,
+      "amount": 30000
+    }
+  ],
+  "subtotal": 1710000,
+  "tax": 171000,
+  "total": 1881000
+}

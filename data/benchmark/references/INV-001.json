@@ -1,0 +1,22 @@
+{
+  "seller": "Cửa hàng An Bình",
+  "invoice_no": "BENCH-001",
+  "invoice_date": "2026-10-01",
+  "lines": [
+    {
+      "description": "Chuột không dây",
+      "quantity": 3,
+      "unit_price": 35000,
+      "amount": 105000
+    },
+    {
+      "description": "Bàn phím cơ",
+      "quantity": 2,
+      "unit_price": 35000,
+      "amount": 70000
+    }
+  ],
+  "subtotal": 175000,
+  "tax": 17500,
+  "total": 192500
+}

@@ -1,0 +1,16 @@
+{
+  "seller": "Văn phòng phẩm Mai",
+  "invoice_no": "BENCH-008",
+  "invoice_date": "2026-10-08",
+  "lines": [
+    {
+      "description": "Bàn phím cơ",
+      "quantity": 2,
+      "unit_price": 75000,
+      "amount": 150000
+    }
+  ],
+  "subtotal": 150000,
+  "tax": 15000,
+  "total": 165000
+}

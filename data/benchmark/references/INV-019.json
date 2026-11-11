@@ -1,0 +1,34 @@
+{
+  "seller": "Cửa hàng Sao Việt",
+  "invoice_no": "BENCH-019",
+  "invoice_date": "2026-10-19",
+  "lines": [
+    {
+      "description": "Cáp sạc",
+      "quantity": 3,
+      "unit_price": 240000,
+      "amount": 720000
+    },
+    {
+      "description": "Chuột không dây",
+      "quantity": 2,
+      "unit_price": 240000,
+      "amount": 480000
+    },
+    {
+      "description": "Sổ tay",
+      "quantity": 1,
+      "unit_price": 75000,
+      "amount": 75000
+    },
+    {
+      "description": "Bàn phím cơ",
+      "quantity": 2,
+      "unit_price": 35000,
+      "amount": 70000
+    }
+  ],
+  "subtotal": 1345000,
+  "tax": 134500,
+  "total": 1479500
+}

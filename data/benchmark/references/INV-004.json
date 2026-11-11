@@ -1,0 +1,16 @@
+{
+  "seller": "Cửa hàng An Bình",
+  "invoice_no": "BENCH-004",
+  "invoice_date": "2026-10-04",
+  "lines": [
+    {
+      "description": "Bút mực",
+      "quantity": 1,
+      "unit_price": 35000,
+      "amount": 35000
+    }
+  ],
+  "subtotal": 35000,
+  "tax": 3500,
+  "total": 38500
+}

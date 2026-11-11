@@ -1,0 +1,28 @@
+{
+  "seller": "Huni Office",
+  "invoice_no": "BENCH-014",
+  "invoice_date": "2026-10-14",
+  "lines": [
+    {
+      "description": "Giá đỡ laptop",
+      "quantity": 4,
+      "unit_price": 35000,
+      "amount": 140000
+    },
+    {
+      "description": "Sổ tay",
+      "quantity": 3,
+      "unit_price": 35000,
+      "amount": 105000
+    },
+    {
+      "description": "Đèn bàn",
+      "quantity": 2,
+      "unit_price": 240000,
+      "amount": 480000
+    }
+  ],
+  "subtotal": 725000,
+  "tax": 72500,
+  "total": 797500
+}

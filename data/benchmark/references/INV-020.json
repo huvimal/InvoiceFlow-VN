@@ -1,0 +1,16 @@
+{
+  "seller": "Cửa hàng Sao Việt",
+  "invoice_no": "BENCH-020",
+  "invoice_date": "2026-10-20",
+  "lines": [
+    {
+      "description": "Đèn bàn",
+      "quantity": 2,
+      "unit_price": 240000,
+      "amount": 480000
+    }
+  ],
+  "subtotal": 480000,
+  "tax": 48000,
+  "total": 528000
+}
